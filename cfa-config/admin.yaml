@@ -65,3 +65,4 @@ proxy-groups:
     - DIRECT
 rules:
   - MATCH,PAKET
+  - DOMAIN,openai.com,DIRECT
