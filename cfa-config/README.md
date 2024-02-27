@@ -19,3 +19,7 @@ User MERTUA :
 ```
 https://raw.githubusercontent.com/OPPAINONYMOUS/oppai-archive/main/cfa-config/mertua.yaml
 ```
+User STB Rumah :
+```
+https://raw.githubusercontent.com/OPPAINONYMOUS/oppai-archive/main/cfa-config/rumah.yaml
+```
