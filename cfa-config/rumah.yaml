@@ -64,7 +64,7 @@ proxy-groups:
     - CONTABO
     - DIRECT
 rules:
-  - MATCH,PAKET
+  - MATCH,GLOBAL
   - DOMAIN,my.zerotier.com,DIRECT
   - DOMAIN-SUFFIX,zerotier.com,DIRECT
   - DST-PORT,43899,DIRECT
