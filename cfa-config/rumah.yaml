@@ -43,7 +43,7 @@ dns:
     - 112.215.203.254
 proxies:
 #Trojan
-  - name: INJECT
+  - name: CONTABO
     server: circles.asia
     port: 443
     type: trojan
@@ -57,23 +57,19 @@ proxies:
         Host: sgcontabo.oppaivpn.my.id
     udp: true
 
-rule-providers:
-  zerotier:
-    type: http
-    behavior: classical
-    path: "./rule_provider/rule_zerotier.yaml"
-    url: https://raw.githubusercontent.com/OPPAINONYMOUS/oppai-archive/main/cfa-config/zerotier.yaml
-
 proxy-groups:
   - name: PAKET
     type: select
     proxies:
-    - INJECT
+    - CONTABO
     - DIRECT
-  - name: ZEROTIER
-    type: select
-    proxies:
-    - INJECT
 rules:
   - MATCH,PAKET
-  - RULE-SET,zerotier,ZEROTIER
+  - DOMAIN,my.zerotier.com,DIRECT
+  - DOMAIN-SUFFIX,zerotier.com,DIRECT
+  - DST-PORT,43899,DIRECT
+  - DST-PORT,9993,DIRECT
+  - IP-CIDR,84.17.53.155/23,DIRECT
+  - IP-CIDR,103.195.103.66/23,DIRECT
+  - IP-CIDR,50.7.252.138/23,DIRECT
+  - IP-CIDR,104.194.8.134/23,DIRECT
