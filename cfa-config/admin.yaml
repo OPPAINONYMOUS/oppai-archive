@@ -43,7 +43,21 @@ dns:
     - 112.215.203.254
 proxies:
 #Trojan
-  - name: CONTABO
+  - name: VIDIO
+    server: quiz.vidio.com
+    port: 443
+    type: trojan
+    password: a446cc1d
+    skip-cert-verify: true
+    sni: sgcontabo.oppaivpn.my.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sgcontabo.oppaivpn.my.id
+    udp: true
+    
+  - name: LIVE.ON
     server: circles.asia
     port: 443
     type: trojan
@@ -61,8 +75,8 @@ proxy-groups:
   - name: PAKET
     type: select
     proxies:
-    - CONTABO
+    - VIDIO
+    - LIVE.ON
     - DIRECT
 rules:
   - MATCH,PAKET
-  - DOMAIN,openai.com,DIRECT
