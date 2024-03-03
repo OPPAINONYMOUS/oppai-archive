@@ -23,3 +23,7 @@ User STB Rumah :
 ```
 https://raw.githubusercontent.com/OPPAINONYMOUS/oppai-archive/main/cfa-config/rumah.yaml
 ```
+User PURMILA :
+```
+https://raw.githubusercontent.com/OPPAINONYMOUS/oppai-archive/main/cfa-config/purmila.yaml
+```
