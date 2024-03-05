@@ -15,6 +15,7 @@ unzip backup_config_DoH.zip
 ```
 rm -f backup_config_DoH.zip
 ```
+### Auto Renew Certificates
 ```
 sudo chmod +x /opt/certs/letsencrypt/scripts/renew-certificate.sh
 ```
@@ -23,4 +24,11 @@ sudo crontab -e
 ```
 ```
 0 0 1 * * bash /opt/certs/letsencrypt/scripts/renew-certificate.sh 2> /dev/null
+```
+### Set a Certificates file Path & Private Key
+```
+/opt/bitnami/letsencrypt/certificates/adguard.oppaivpn.my.id.crt
+```
+```
+/opt/bitnami/letsencrypt/certificates/adguard.oppaivpn.my.id.key
 ```
