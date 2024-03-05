@@ -15,3 +15,12 @@ unzip backup_config_DoH.zip
 ```
 rm -f backup_config_DoH.zip
 ```
+```
+sudo chmod +x /opt/certs/letsencrypt/scripts/renew-certificate.sh
+```
+```
+sudo crontab -e
+```
+```
+0 0 1 * * bash /opt/certs/letsencrypt/scripts/renew-certificate.sh 2> /dev/null
+```
