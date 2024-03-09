@@ -12,6 +12,7 @@ opkg install watchcat
 3. Setting Mode to Periodic Reboot
 4. Set Period, example 10m
 5. Force Period Delay 0
+6. and SAVE & APPLY
 
 ![b](https://raw.githubusercontent.com/OPPAINONYMOUS/oppai-archive/main/openclash-autoreboot/img.jpg)
 
