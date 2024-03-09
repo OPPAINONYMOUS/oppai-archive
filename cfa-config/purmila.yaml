@@ -208,14 +208,9 @@ proxy-groups:
   - name: INJECT
     type: select
     proxies:
-    - VIDIO-BUG1
-    - VIDIO-BUG2
-    - VIDIO-BUG3
-    - VIDIO-BUG4
-    - VIDIO-BUG5
-    - LOAD-BALANCE
+    - INJECT-VIDIO
     - DIRECT
-  - name: LOAD-BALANCE
+  - name: INJECT-VIDIO
     type: load-balance
     strategy: consistent-hashing
     disable-udp: false
