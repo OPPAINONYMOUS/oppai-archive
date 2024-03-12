@@ -1,6 +1,3 @@
-BUG5
-rules:
-  - MATCH,INJECT
 ---
 redir-port: 7892
 port: 7890
