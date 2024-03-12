@@ -1,226 +1,249 @@
+BUG5
+rules:
+  - MATCH,INJECT
+---
+redir-port: 7892
 port: 7890
 socks-port: 7891
-redir-port: 7892
 mixed-port: 7893
-tproxy-port: 7895
-ipv6: false
 mode: rule
 log-level: silent
 allow-lan: true
-external-controller: 0.0.0.0:2222
-external-ui: yacd-gh-pages
-secret: ""
+external-controller: 0.0.0.0:9090
+secret: oppaiwrt
 bind-address: "*"
-unified-delay: true
-profile:
-  store-selected: true
+external-ui: "/usr/share/openclash/ui"
+experimental:
+  sniff-tls-sni: true
 dns:
   enable: true
   ipv6: false
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
   listen: 0.0.0.0:7874
-  nameserver:
-    - 8.8.8.8
-    - 1.0.0.1
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - tls://1dot1dot1dot1.cloudflare-dns.com
-    - https://puredns.org/dns-query
-    - tls://puredns.org:853
-  fallback:
-    - 1.1.1.1
-    - 8.8.4.4
-    - https://cloudflare-dns.com/dns-query
-    - 112.215.203.254
-    - https://dns.google/dns-query
-    - tcp://108.137.44.39
-    - tcp://108.137.44.9
-    - 108.137.44.39
-    - 108.137.44.9
-  default-nameserver:
-    - 8.8.8.8
-    - 1.1.1.1
-    - 112.215.203.254
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-    - "*.lan"
-    - "*.localdomain"
-    - "*.example"
-    - "*.invalid"
-    - "*.localhost"
-    - "*.test"
-    - "*.local"
-    - "*.home.arpa"
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - "*.time.edu.cn"
-    - "*.ntp.org.cn"
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - music.163.com
-    - "*.music.163.com"
-    - "*.126.net"
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - "*.kuwo.cn"
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - y.qq.com
-    - "*.y.qq.com"
-    - streamoc.music.tc.qq.com
-    - mobileoc.music.tc.qq.com
-    - isure.stream.qqmusic.qq.com
-    - dl.stream.qqmusic.qq.com
-    - aqqmusic.tc.qq.com
-    - amobile.music.tc.qq.com
-    - "*.xiami.com"
-    - "*.music.migu.cn"
-    - music.migu.cn
-    - "*.msftconnecttest.com"
-    - "*.msftncsi.com"
+  - "*.lan"
+  - "*.localdomain"
+  - "*.example"
+  - "*.invalid"
+  - "*.localhost"
+  - "*.test"
+  - "*.local"
+  - "*.home.arpa"
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - "*.time.edu.cn"
+  - "*.ntp.org.cn"
+  - "+.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - music.163.com
+  - "*.music.163.com"
+  - "*.126.net"
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - "*.kuwo.cn"
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - "*.y.qq.com"
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - "*.xiami.com"
+  - "*.music.migu.cn"
+  - music.migu.cn
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - msftconnecttest.com
+  - msftncsi.com
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - "+.srv.nintendo.net"
+  - "*.n.n.srv.nintendo.net"
+  - "+.stun.playstation.net"
+  - xbox.*.*.microsoft.com
+  - "*.*.xboxlive.com"
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - "+.battlenet.com.cn"
+  - "+.wotgame.cn"
+  - "+.wggames.cn"
+  - "+.wowsgame.cn"
+  - "+.wargaming.net"
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - heartbeat.belkin.com
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "*.router.asus.com"
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - "+.nflxvideo.net"
+  - "*.square-enix.com"
+  - "*.finalfantasyxiv.com"
+  - "*.ffxiv.com"
+  - "*.ff14.sdo.com"
+  - ff.dorado.sdo.com
+  - "*.mcdn.bilivideo.cn"
+  - "+.media.dssott.com"
+  - time-ios.apple.com
+  - shark007.net
+  fallback-filter:
+    geoip: true
+    geoip-code: ID
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    - 255.255.255.255/32
+    domain:
+    - "+.google.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.googlevideo.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
     - msftconnecttest.com
     - msftncsi.com
-    - localhost.ptlogin2.qq.com
-    - localhost.sec.qq.com
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - xnotify.xboxlive.com
-    - +.battlenet.com.cn
-    - +.wotgame.cn
-    - +.wggames.cn
-    - +.wowsgame.cn
-    - +.wargaming.net
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - +.stun.*.*
-    - +.stun.*.*.*
-    - +.stun.*.*.*.*
-    - heartbeat.belkin.com
-    - "*.linksys.com"
-    - "*.linksyssmartwifi.com"
-    - "*.router.asus.com"
-    - mesu.apple.com
-    - swscan.apple.com
-    - swquery.apple.com
-    - swdownload.apple.com
-    - swcdn.apple.com
-    - swdist.apple.com
-    - lens.l.google.com
-    - stun.l.google.com
-    - +.nflxvideo.net
-    - "*.square-enix.com"
-    - "*.finalfantasyxiv.com"
-    - "*.ffxiv.com"
-    - "*.mcdn.bilivideo.cn"
-    - +.media.dssott.com
-
+    - "+.*"
+  default-nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+  - 1.1.1.1
+  - 1.0.0.1
+  - 9.9.9.9
+  - 149.112.112.112
+  - 208.67.222.222
+  - 208.67.220.220
+  - 185.228.168.9
+  - 185.228.169.168
+  - 76.76.2.0
+  - 76.76.10.0
+  - 94.140.14.140
+  - 94.140.14.141
+  - 172.105.216.54
+  nameserver:
+  - 1.1.1.1
+  - 8.8.8.8
+  - 9.9.9.9
+  fallback:
+  - 1.1.1.1
+  - 8.8.8.8
+  - 9.9.9.9
+profile:
+  store-selected: true
+  store-fakeip: true
+  store-fake-ip: true
 proxies:
 #Trojan
-  - name: VIDIO-BUG1
+  - name: PAKET-XCPROTEKSI
+    server: cvs-deo.shopeemobile.com
+    port: 443
+    type: trojan
+    password: ecb710d9
+    skip-cert-verify: true
+    sni: tunnel.oppaivpn.my.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: tunnel.oppaivpn.my.id
+    udp: true
+  - name: PAKET-VIDIO
     server: quiz.vidio.com
     port: 443
     type: trojan
-    password: a2655ab1
+    password: ecb710d9
     skip-cert-verify: true
-    sni: sgcontabo.oppaivpn.my.id
+    sni: tunnel.oppaivpn.my.id
     network: ws
     ws-opts:
       path: /trojan
       headers:
-        Host: sgcontabo.oppaivpn.my.id
+        Host: tunnel.oppaivpn.my.id
     udp: true
-  - name: VIDIO-BUG2
-    server: quiz.int.vidio.com
+  - name: PAKET-LIVE.ON
+    server: circles.asia
     port: 443
     type: trojan
-    password: a2655ab1
+    password: ecb710d9
     skip-cert-verify: true
-    sni: sgcontabo.oppaivpn.my.id
+    sni: tunnel.oppaivpn.my.id
     network: ws
     ws-opts:
       path: /trojan
       headers:
-        Host: sgcontabo.oppaivpn.my.id
+        Host: tunnel.oppaivpn.my.id
     udp: true
-  - name: VIDIO-BUG3
-    server: img.email3.vidio.com
+  - name: PAKET-FLEX
+    server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: a2655ab1
+    password: ecb710d9
     skip-cert-verify: true
-    sni: sgcontabo.oppaivpn.my.id
+    sni: tunnel.oppaivpn.my.id
     network: ws
     ws-opts:
       path: /trojan
       headers:
-        Host: sgcontabo.oppaivpn.my.id
-    udp: true
-  - name: VIDIO-BUG4
-    server: quiz.staging.vidio.com
-    port: 443
-    type: trojan
-    password: a2655ab1
-    skip-cert-verify: true
-    sni: sgcontabo.oppaivpn.my.id
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: sgcontabo.oppaivpn.my.id
-    udp: true
-  - name: VIDIO-BUG5
-    server: 104.22.5.240
-    port: 443
-    type: trojan
-    password: a2655ab1
-    skip-cert-verify: true
-    sni: sgcontabo.oppaivpn.my.id
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: sgcontabo.oppaivpn.my.id
+        Host: tunnel.oppaivpn.my.id
     udp: true
     
 proxy-groups:
   - name: INJECT
     type: select
     proxies:
-    - INJECT-VIDIO
+    - PAKET-XCPROTEKSI
+    - PAKET-VIDIO
+    - PAKET-LIVE.ON
+    - PAKET-FLEX
     - DIRECT
-  - name: INJECT-VIDIO
-    type: load-balance
-    strategy: consistent-hashing
-    disable-udp: false
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    proxies:
-    - VIDIO-BUG1
-    - VIDIO-BUG2
-    - VIDIO-BUG3
-    - VIDIO-BUG4
-    - VIDIO-BUG5
 rules:
   - MATCH,INJECT
