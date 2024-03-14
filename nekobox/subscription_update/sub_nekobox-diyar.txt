@@ -1,0 +1,5 @@
+sn://wg?eNoVzl9qwjAcAOBM8GE7he-FNL-sf7KAT85MFNlErfqY_kyq0LWjtNP0rQfyADvTGOwI6neCr0cIMUWmM0MxL5u9zXVlMD-aoqZY_h0eCfmBmFOIKKPcf-ZPPGKRDGLGJACTIraBNHEK0giBEpFbGaAQPnBxcW96AfN259w0sVgkqj4n368hW1bNGFKh0WvU19aCxxbDS_q5fR95CtR5PFcve3ec8Unow3JdtxM2bZIyhAM_fdjMlcOO9AlZbdrfh1t_dH-r-3uw0dV_110BM5lBIg
+trojan://4001aab5@cvs-deo.shopeemobile.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-XCPROTEKSI
+trojan://4001aab5@quiz.vidio.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-VIDIO
+trojan://4001aab5@circles.asia:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-LIVE.ON
+trojan://4001aab5@sogood.linefriends.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-FLEX
