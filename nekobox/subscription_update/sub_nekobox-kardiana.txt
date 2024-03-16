@@ -1,0 +1,4 @@
+trojan://022515fb@104.18.49.163:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-XCPROTEKSI
+trojan://022515fb@quiz.vidio.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-VIDIO
+trojan://022515fb@circles.asia:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-LIVE.ON
+trojan://022515fb@sogood.linefriends.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-FLEX
