@@ -1,4 +1,0 @@
-trojan://ecb710d9@cvs-deo.shopeemobile.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-XCPROTEKSI
-trojan://ecb710d9@quiz.vidio.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-VIDIO
-trojan://ecb710d9@circles.asia:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-LIVE.ON
-trojan://ecb710d9@sogood.linefriends.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-FLEX
