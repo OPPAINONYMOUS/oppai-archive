@@ -1,4 +1,8 @@
-trojan://4001aab5@104.18.53.172:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-XCPROTEKSI
-trojan://4001aab5@quiz.vidio.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-VIDIO
-trojan://4001aab5@circles.asia:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-LIVE.ON
-trojan://4001aab5@sogood.linefriends.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-FLEX
+trojan://4001aab5@104.18.53.172:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-XCPROTEKSI-SG
+trojan://4001aab5@quiz.vidio.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-VIDIO-SG
+trojan://4001aab5@circles.asia:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-LIVE.ON-SG
+trojan://4001aab5@sogood.linefriends.com:443/?type=ws&host=tunnel.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=tunnel.oppaivpn.my.id&allowInsecure=1#PAKET-FLEX-SG
+trojan://4001aab5@104.18.53.172:443/?type=ws&host=id.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=id.oppaivpn.my.id&allowInsecure=1#PAKET-XCPROTEKSI-ID
+trojan://4001aab5@quiz.vidio.com:443/?type=ws&host=id.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=id.oppaivpn.my.id&allowInsecure=1#PAKET-VIDIO-ID
+trojan://4001aab5@circles.asia:443/?type=ws&host=id.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=id.oppaivpn.my.id&allowInsecure=1#PAKET-LIVE.ON-ID
+trojan://4001aab5@sogood.linefriends.com:443/?type=ws&host=id.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=id.oppaivpn.my.id&allowInsecure=1#PAKET-FLEX-ID
