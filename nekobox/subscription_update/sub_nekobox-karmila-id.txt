@@ -1,0 +1,4 @@
+trojan://50d48c62@104.18.53.172:443/?type=ws&host=id.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=id.oppaivpn.my.id&allowInsecure=1#PAKET-XCPROTEKSI-ID
+trojan://50d48c62@quiz.vidio.com:443/?type=ws&host=id.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=id.oppaivpn.my.id&allowInsecure=1#PAKET-VIDIO-ID
+trojan://50d48c62@circles.asia:443/?type=ws&host=id.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=id.oppaivpn.my.id&allowInsecure=1#PAKET-LIVE.ON-ID
+trojan://50d48c62@sogood.linefriends.com:443/?type=ws&host=id.oppaivpn.my.id&path=%2Ftrojan&security=tls&sni=id.oppaivpn.my.id&allowInsecure=1#PAKET-FLEX-ID
