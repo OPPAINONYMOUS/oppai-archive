@@ -27,3 +27,11 @@ User PURMILA :
 ```
 https://raw.githubusercontent.com/OPPAINONYMOUS/oppai-archive/main/cfa-config/purmila.yaml
 ```
+User OGIK :
+```
+https://raw.githubusercontent.com/OPPAINONYMOUS/oppai-archive/main/cfa-config/ogik.yaml
+```
+User PING :
+```
+https://raw.githubusercontent.com/OPPAINONYMOUS/oppai-archive/main/cfa-config/ping.yaml
+```
