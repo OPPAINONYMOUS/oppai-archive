@@ -42,5 +42,13 @@ Anyone with this secret can perform the granted actions on the resources specifi
 In the below screenshot, we have black-box the secret for obvious reasons. If you happen to lose the secret, you can always regenerate it from the API Tokens table so you don’t have to configure all the permission again.
 ![b](https://raw.githubusercontent.com/OPPAINONYMOUS/oppai-archive/main/Install_AdGuard_DoH/%234.png)
 
+In addition to the secret itself, this page provides an example curl request that can be used to verify that the token was successfully created
 
-
+### Generate A Let’s Encrypt Certificate
+Please remember to replace your CLOUDFLARE_AND_API_TOKEN value, the Domain placeholder with your actual domain name, and the Email-Address placeholder with your email address.
+```
+cd /opt/certs/letsencrypt/
+```
+```
+sudo CLOUDFLARE_DNS_API_TOKEN=Your-token-number ./lego --dns cloudflare --domains your-domain-name  --email admin@webkul.com --path="/opt/certs/letsencrypt" run
+```
