@@ -18,3 +18,4 @@ sudo mkdir -p /opt/certs/letsencrypt
 ```
 sudo mv lego /opt/certs/letsencrypt/lego
 ```
+### Create A Cloudflare API Key Or Token
