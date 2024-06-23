@@ -98,3 +98,16 @@ sudo CLOUDFLARE_DNS_API_TOKEN=ELQByDJc2Gx82P8wUkAd-Ro-xD4HddoPW8nuI_dH ./lego --
 
 sudo systemctl restart nginx
 ```
+Then press Ctrl+X to save the script and exit the nano editor.
+
+Next, you need to make the script executable using the following command.
+```
+sudo chmod +x /opt/certs/letsencrypt/scripts/renew-certificate.sh
+```
+```
+sudo crontab -e
+```
+Finally, add the below line lines to the crontab file and then press Ctrl + X to save it and exit the nano editor.
+```
+0 0 * * * bash /opt/certs/letsencrypt/scripts/renew-certificate.sh 2> /dev/null
+```
