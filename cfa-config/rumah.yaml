@@ -180,8 +180,8 @@ profile:
   store-fake-ip: true
 proxies:
 #Trojan
-  - name: PAKET-XCPROTEKSI
-    server: cvs-deo.shopeemobile.com
+  - name: PAKET-XCPROTEKSI-SG
+    server: 104.18.49.163
     port: 443
     type: trojan
     password: 480a7017
@@ -193,7 +193,7 @@ proxies:
       headers:
         Host: tunnel.oppaivpn.my.id
     udp: true
-  - name: PAKET-VIDIO
+  - name: PAKET-VIDIO-SG
     server: quiz.vidio.com
     port: 443
     type: trojan
@@ -206,7 +206,7 @@ proxies:
       headers:
         Host: tunnel.oppaivpn.my.id
     udp: true
-  - name: PAKET-LIVE.ON
+  - name: PAKET-LIVE.ON-SG
     server: circles.asia
     port: 443
     type: trojan
@@ -219,7 +219,7 @@ proxies:
       headers:
         Host: tunnel.oppaivpn.my.id
     udp: true
-  - name: PAKET-FLEX
+  - name: PAKET-FLEX-SG
     server: sogood.linefriends.com
     port: 443
     type: trojan
@@ -232,15 +232,107 @@ proxies:
       headers:
         Host: tunnel.oppaivpn.my.id
     udp: true
+  - name: PAKET-XCPROTEKSI-ID
+    server: 104.18.49.163
+    port: 443
+    type: trojan
+    password: 480a7017
+    skip-cert-verify: true
+    sni: id.oppaivpn.my.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: id.oppaivpn.my.id
+    udp: true
+  - name: PAKET-VIDIO-ID
+    server: quiz.vidio.com
+    port: 443
+    type: trojan
+    password: 480a7017
+    skip-cert-verify: true
+    sni: id.oppaivpn.my.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: id.oppaivpn.my.id
+    udp: true
+  - name: PAKET-LIVE.ON-ID
+    server: circles.asia
+    port: 443
+    type: trojan
+    password: 480a7017
+    skip-cert-verify: true
+    sni: id.oppaivpn.my.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: id.oppaivpn.my.id
+    udp: true
+  - name: PAKET-FLEX-ID
+    server: sogood.linefriends.com
+    port: 443
+    type: trojan
+    password: 480a7017
+    skip-cert-verify: true
+    sni: id.oppaivpn.my.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: id.oppaivpn.my.id
+    udp: true
     
 proxy-groups:
   - name: INJECT
     type: select
     proxies:
-    - PAKET-XCPROTEKSI
-    - PAKET-VIDIO
-    - PAKET-LIVE.ON
-    - PAKET-FLEX
+    - PAKET-XCPROTEKSI-SG
+    - PAKET-VIDIO-SG
+    - PAKET-LIVE.ON-SG
+    - PAKET-FLEX-SG
+    - PAKET-XCPROTEKSI-ID
+    - PAKET-VIDIO-ID
+    - PAKET-LIVE.ON-ID
+    - PAKET-FLEX-ID
+    - PAKET-VIDEO-BEST-PING
+    - PAKET-XCP-BEST-PING
+    - PAKET-LIVE.ON-BEST-PING
+    - PAKET-FLEX-BEST-PING
     - DIRECT
+  - name: PAKET-VIDEO-BEST-PING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+    - PAKET-VIDIO-SG
+    - PAKET-VIDIO-ID
+  - name: PAKET-XCP-BEST-PING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+    - PAKET-XCPROTEKSI-SG
+    - PAKET-XCPROTEKSI-ID
+  - name: PAKET-LIVE.ON-BEST-PING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+    - PAKET-LIVE.ON-SG
+    - PAKET-LIVE.ON-ID
+  - name: PAKET-FLEX-BEST-PING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+    - PAKET-FLEX-SG
+    - PAKET-FLEX-ID
 rules:
   - MATCH,INJECT
