@@ -52,3 +52,7 @@ cd /opt/certs/letsencrypt/
 ```
 sudo CLOUDFLARE_DNS_API_TOKEN=Your-token-number ./lego --dns cloudflare --domains your-domain-name  --email admin@example.com --path="/opt/certs/letsencrypt" run
 ```
+EXAMPLE :
+```
+sudo CLOUDFLARE_DNS_API_TOKEN=ELQByDJc2Gx82P8wUkAd-Ro-xD4HddoPW8nuI_dH ./lego --dns cloudflare --domains doh.oppaivpn.my.id  --email e.periantara@gmail.com --path="/opt/certs/letsencrypt" run
+```
