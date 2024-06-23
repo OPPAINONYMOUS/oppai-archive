@@ -50,5 +50,5 @@ Please remember to replace your CLOUDFLARE_AND_API_TOKEN value, the Domain place
 cd /opt/certs/letsencrypt/
 ```
 ```
-sudo CLOUDFLARE_DNS_API_TOKEN=Your-token-number ./lego --dns cloudflare --domains your-domain-name  --email admin@webkul.com --path="/opt/certs/letsencrypt" run
+sudo CLOUDFLARE_DNS_API_TOKEN=Your-token-number ./lego --dns cloudflare --domains your-domain-name  --email admin@example.com --path="/opt/certs/letsencrypt" run
 ```
