@@ -56,3 +56,45 @@ EXAMPLE :
 ```
 sudo CLOUDFLARE_DNS_API_TOKEN=ELQByDJc2Gx82P8wUkAd-Ro-xD4HddoPW8nuI_dH ./lego --dns cloudflare --domains doh.oppaivpn.my.id  --email e.periantara@gmail.com --path="/opt/certs/letsencrypt" run
 ```
+### Auto Renew Certs
+```
+sudo mkdir -p /opt/certs/letsencrypt/scripts
+```
+```
+sudo nano /opt/certs/letsencrypt/scripts/renew-certificate.sh
+```
+nano editor will open the file, enter the following content into the script and save it depending on if you have Apache and Nginx.
+
+Please remember to replace your CLOUDFLARE_AND_API_TOKEN value, the Domain placeholder with your actual domain name, and the Email-Address placeholder with your email address.
+
+For Apache :
+```
+#!/bin/bash
+ 
+cd /opt/certs/letsencrypt/
+ 
+sudo CLOUDFLARE_DNS_API_TOKEN=Your API Token ./lego --dns cloudflare --domains domain.com --email admin@webkul.com --path="/opt/certs/letsencrypt" renew --days 90
+ 
+sudo systemctl restart apache2
+```
+
+For Nginx :
+```
+#!/bin/bash
+ 
+cd /opt/certs/letsencrypt/
+ 
+sudo CLOUDFLARE_DNS_API_TOKEN=Your API Token ./lego --dns cloudflare --domains domain.com --email admin@webkul.com --path="/opt/certs/letsencrypt" renew --days 90
+ 
+sudo systemctl restart nginx
+```
+EXAMPLE For Nginx :
+```
+#!/bin/bash
+
+cd /opt/bitnami/letsencrypt/
+
+sudo CLOUDFLARE_DNS_API_TOKEN=ELQByDJc2Gx82P8wUkAd-Ro-xD4HddoPW8nuI_dH ./lego --dns cloudflare --domains doh.oppaivpn.my.id  --email e.periantara@gmail.com --path="/opt/certs/letsencrypt" renew --days 90
+
+sudo systemctl restart nginx
+```
