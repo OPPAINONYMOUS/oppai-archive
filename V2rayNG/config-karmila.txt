@@ -1,0 +1,5 @@
+trojan://50d48c62@quiz.vidio.com:443?path=%2Ftrojan&security=tls&host=tunnel.oppaivpn.my.id&type=ws&sni=tunnel.oppaivpn.my.id#TROJAN-SERVER-OVH-SG
+vless://7bca2200-6aae-429f-8acf-00111e3fda12@quiz.vidio.com:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=quiz.vidio.com.alibabacloud.oppaivpn.my.id&fp=randomized&type=ws&sni=quiz.vidio.com.alibabacloud.oppaivpn.my.id#VLESS-SERVER-ALIBABACLOUD-SG
+vless://58f11c6d-9e5c-4182-af1c-89b1837a4597@quiz.vidio.com:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=quiz.vidio.com.alibabaprivate.oppaivpn.my.id&fp=randomized&type=ws&sni=quiz.vidio.com.alibabaprivate.oppaivpn.my.id#VLESS-SERVER-ALIBABAPRIVATE-SG
+vless://82913a0d-6349-435d-988b-fdbd52943826@quiz.vidio.com:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=quiz.vidio.com.amazon.oppaivpn.my.id&fp=randomized&type=ws&sni=quiz.vidio.com.amazon.oppaivpn.my.id#VLESS-SERVER-AMAZON-SG
+vless://75e60c35-ee3e-4966-bd6a-74cf38933c1c@quiz.vidio.com:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=digitalocean.oppaivpn.my.id&fp=randomized&type=ws&sni=digitalocean.oppaivpn.my.id#VLESS-SERVER-DIGITALOCEAN-SG
