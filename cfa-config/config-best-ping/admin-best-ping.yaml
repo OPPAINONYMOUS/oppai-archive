@@ -192,7 +192,7 @@ proxies:
       headers:
         Host: tunnel.oppaivpn.my.id
     udp: true
-  - name: VLESS-SERVER-ALIBABACLOUD-SG-1
+  - name: VLESS-SERVER-OPPAI-ALIBABACLOUD-SG
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -207,7 +207,7 @@ proxies:
       headers:
         Host: quiz.vidio.com.alibabacloud.oppaivpn.my.id
     udp: true
-  - name: VLESS-SERVER-ALIBABAPRIVATE-SG-1
+  - name: VLESS-SERVER-OPPAI-ALIBABAPRIVATE-SG
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -222,7 +222,7 @@ proxies:
       headers:
         Host: quiz.vidio.com.alibabaprivate.oppaivpn.my.id
     udp: true
-  - name: VLESS-SERVER-AMAZON-SG-1
+  - name: VLESS-SERVER-OPPAI-AMAZON-SG
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -237,7 +237,7 @@ proxies:
       headers:
         Host: quiz.vidio.com.amazon.oppaivpn.my.id
     udp: true
-  - name: VLESS-SERVER-DIGITALOCEAN-SG-1
+  - name: VLESS-SERVER-OPPAI-DIGITALOCEAN-SG
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -252,7 +252,7 @@ proxies:
       headers:
         Host: digitalocean.oppaivpn.my.id
     udp: true
-   - name: VLESS-SERVER-ALIBABACLOUD-SG-2
+  - name: VLESS-SERVER-MEQ-ALIBABACLOUD-SG
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -267,7 +267,7 @@ proxies:
       headers:
         Host: quiz.vidio.com.alibabacloud.oppaiplayer.my.id
     udp: true
-  - name: VLESS-SERVER-ALIBABAPRIVATE-SG-2
+  - name: VLESS-SERVER-MEQ-ALIBABAPRIVATE-SG
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -282,7 +282,7 @@ proxies:
       headers:
         Host: quiz.vidio.com.alibabaprivate.oppaiplayer.my.id
     udp: true
-  - name: VLESS-SERVER-AMAZON-SG-2
+  - name: VLESS-SERVER-MEQ-AMAZON-SG
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -297,7 +297,7 @@ proxies:
       headers:
         Host: quiz.vidio.com.amazon.oppaiplayer.my.id
     udp: true
-  - name: VLESS-SERVER-DIGITALOCEAN-SG-2
+  - name: VLESS-SERVER-MEQ-DIGITALOCEAN-SG
     server: quiz.vidio.com
     port: 443
     type: vless
@@ -318,14 +318,14 @@ proxy-groups:
     type: select
     proxies:
     - TROJAN-SERVER-OVH-SG
-    - VLESS-SERVER-ALIBABACLOUD-SG-1
-    - VLESS-SERVER-ALIBABAPRIVATE-SG-1
-    - VLESS-SERVER-AMAZON-SG-1
-    - VLESS-SERVER-DIGITALOCEAN-SG-1
-    - VLESS-SERVER-ALIBABACLOUD-SG-2
-    - VLESS-SERVER-ALIBABAPRIVATE-SG-2
-    - VLESS-SERVER-AMAZON-SG-2
-    - VLESS-SERVER-DIGITALOCEAN-SG-2
+    - VLESS-SERVER-OPPAI-ALIBABACLOUD-SG
+    - VLESS-SERVER-OPPAI-ALIBABAPRIVATE-SG
+    - VLESS-SERVER-OPPAI-AMAZON-SG
+    - VLESS-SERVER-OPPAI-DIGITALOCEAN-SG
+    - VLESS-SERVER-MEQ-ALIBABACLOUD-SG
+    - VLESS-SERVER-MEQ-ALIBABAPRIVATE-SG
+    - VLESS-SERVER-MEQ-AMAZON-SG
+    - VLESS-SERVER-MEQ-DIGITALOCEAN-SG
     - INJECT-BEST-PING
     - DIRECT
   - name: INJECT-BEST-PING
@@ -335,13 +335,13 @@ proxy-groups:
     tolerance: 50
     proxies:
     - TROJAN-SERVER-OVH-SG
-    - VLESS-SERVER-ALIBABACLOUD-SG-1
-    - VLESS-SERVER-ALIBABAPRIVATE-SG-1
-    - VLESS-SERVER-AMAZON-SG-1
-    - VLESS-SERVER-DIGITALOCEAN-SG-1
-    - VLESS-SERVER-ALIBABACLOUD-SG-2
-    - VLESS-SERVER-ALIBABAPRIVATE-SG-2
-    - VLESS-SERVER-AMAZON-SG-2
-    - VLESS-SERVER-DIGITALOCEAN-SG-2
+    - VLESS-SERVER-OPPAI-ALIBABACLOUD-SG
+    - VLESS-SERVER-OPPAI-ALIBABAPRIVATE-SG
+    - VLESS-SERVER-OPPAI-AMAZON-SG
+    - VLESS-SERVER-OPPAI-DIGITALOCEAN-SG
+    - VLESS-SERVER-MEQ-ALIBABACLOUD-SG
+    - VLESS-SERVER-MEQ-ALIBABAPRIVATE-SG
+    - VLESS-SERVER-MEQ-AMAZON-SG
+    - VLESS-SERVER-MEQ-DIGITALOCEAN-SG
 rules:
   - MATCH,INJECT
