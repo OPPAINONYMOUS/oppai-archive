@@ -330,7 +330,7 @@ proxy-groups:
     - DIRECT
   - name: INJECT-BEST-PING
     type: url-test
-    url: http://hi.bonds.id/ping
+    url: https://m.youtube.com
     interval: 300
     tolerance: 50
     proxies:
