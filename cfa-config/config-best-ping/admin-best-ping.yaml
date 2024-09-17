@@ -179,18 +179,18 @@ profile:
   store-fakeip: true
   store-fake-ip: true
 proxies:
-  - name: TROJAN-SERVER-OVH-SG
+  - name: TROJAN-FREE
     server: quiz.vidio.com
     port: 443
     type: trojan
-    password: e2abe128
+    password: a24319f6-76ca-4a54-a993-c4a8ca2b63c2
     skip-cert-verify: true
-    sni: tunnel.oppaivpn.my.id
+    sni: sg1.v4trojn.xyz
     network: ws
     ws-opts:
-      path: /trojan
+      path: /trojan-ws
       headers:
-        Host: tunnel.oppaivpn.my.id
+        Host: sg1.v4trojn.xyz
     udp: true
   - name: VLESS-SERVER-OPPAI-ALIBABACLOUD-SG
     server: quiz.vidio.com
@@ -317,7 +317,7 @@ proxy-groups:
   - name: INJECT
     type: select
     proxies:
-    - TROJAN-SERVER-OVH-SG
+    - TROJAN-FREE
     - VLESS-SERVER-OPPAI-ALIBABACLOUD-SG
     - VLESS-SERVER-OPPAI-ALIBABAPRIVATE-SG
     - VLESS-SERVER-OPPAI-AMAZON-SG
@@ -334,7 +334,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-    - TROJAN-SERVER-OVH-SG
+    - TROJAN-FREE
     - VLESS-SERVER-OPPAI-ALIBABACLOUD-SG
     - VLESS-SERVER-OPPAI-ALIBABAPRIVATE-SG
     - VLESS-SERVER-OPPAI-AMAZON-SG
