@@ -183,14 +183,14 @@ proxies:
     server: quiz.vidio.com
     port: 443
     type: trojan
-    password: a24319f6-76ca-4a54-a993-c4a8ca2b63c2
+    password: 9c679304-50c9-45f2-8cb7-c88a6565481e
     skip-cert-verify: true
-    sni: sg1.v4trojn.xyz
+    sni: sg2.v4trojn.xyz
     network: ws
     ws-opts:
       path: /trojan-ws
       headers:
-        Host: sg1.v4trojn.xyz
+        Host: sg2.v4trojn.xyz
     udp: true
   - name: VLESS-SERVER-OPPAI-ALIBABACLOUD-SG
     server: quiz.vidio.com
