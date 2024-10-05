@@ -179,7 +179,7 @@ profile:
   store-fakeip: true
   store-fake-ip: true
 proxies:
-  - name: TROJAN-FREE
+  - name: TROJAN-WS-FREE
     server: quiz.vidio.com
     port: 443
     type: trojan
@@ -317,7 +317,7 @@ proxy-groups:
   - name: INJECT
     type: select
     proxies:
-    - TROJAN-FREE
+    - TROJAN-WS-FREE
     - VLESS-SERVER-OPPAI-ALIBABACLOUD-SG
     - VLESS-SERVER-OPPAI-ALIBABAPRIVATE-SG
     - VLESS-SERVER-OPPAI-AMAZON-SG
