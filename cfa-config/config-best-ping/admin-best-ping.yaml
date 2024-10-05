@@ -1,4 +1,4 @@
-100---
+---
 redir-port: 7892
 port: 7890
 socks-port: 7891
@@ -183,7 +183,7 @@ proxies:
     server: quiz.vidio.com
     port: 443
     type: trojan
-    password: 937303f3-c2ba-4a65-ac16-00efba211783
+    password: dd0a428a-be96-4398-8ba7-1c0b200a0e2e
     skip-cert-verify: true
     sni: sg1.v4trojn.xyz
     network: ws
