@@ -183,12 +183,12 @@ proxies:
     server: quiz.vidio.com
     port: 443
     type: trojan
-    password: 848fb52b-8f99-49a1-ad5e-c669a5767a29
+    password: 937303f3-c2ba-4a65-ac16-00efba211783
     skip-cert-verify: true
     sni: sg1.v4trojn.xyz
-    network: grpc
+    network: ws
     ws-opts:
-      path: /trojan-grpc
+      path: /trojan-ws
       headers:
         Host: sg1.v4trojn.xyz
     udp: true
